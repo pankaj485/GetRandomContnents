@@ -5,9 +5,10 @@
 }
 
 body {
-  background-color: azure;
+  background-color: rgb(243, 243, 243);
 
   font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
   min-height: 100vh;
   margin: 0;
 
@@ -16,7 +17,6 @@ body {
   justify-content: center;
   flex-direction: column;
 
-  overflow: hidden;
   color: rgb(57, 55, 55);
 
   transition-delay: 0.5s;
@@ -30,7 +30,7 @@ body {
 
 .quotesContainer {
   max-width: 600px;
-  background-color: #e6f6fd;
+  background-color: #e7eff3;
   box-shadow: -5px -5px 10px #6b8c9a;
   padding: 2rem;
   border-radius: 1rem;
@@ -72,7 +72,7 @@ body {
 }
 
 .contentInfo {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-size: 1rem;
 }
 
@@ -102,4 +102,17 @@ body {
   content: '"';
   font-size: 1.8rem;
   margin-top: 1rem;
+}
+
+/* making bit responsive */
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 1rem 0.5rem;
+    font-size: 18px;
+  }
+
+  .quotesContainer {
+    padding: 1rem;
+  }
 }
